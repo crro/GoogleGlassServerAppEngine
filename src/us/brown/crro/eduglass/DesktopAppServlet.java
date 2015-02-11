@@ -75,7 +75,7 @@ public class DesktopAppServlet extends HttpServlet {
 				StringBuilder out = new StringBuilder();
 		        String line;
 		        while ((line = reader.readLine()) != null) {
-		            out.append(line);
+		            out.append(line + "\n");
 		        }
 		        String notes = out.toString();
 		        reader.close();
